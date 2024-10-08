@@ -41,6 +41,17 @@ for example: conda create -n dong_test python=3.8.19
 conda activate dong_test
 ```
 
+### Install the pytorch according to the 'https://pytorch.org/get-started/locally/'
+* checking the CUDA version
+```
+nvidia-smi
+```
+* Go to the pytorch Official Website 'https://pytorch.org/get-started/locally/', copy the command according to CUDA version
+for example:
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
+```
+
 ### Upload the code using git command [We can also choose file transfer(SSH) to upload the code ourselves.]
 
 * Creating a new folder 'dongProject' to save ours code
