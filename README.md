@@ -5,7 +5,7 @@
 ⚡ If you have no idea how to Configure the operating environment to run this .py file,
 following me to talk about how to run it in those servers provided by Professor Wang.
 
-### connecting to server using VScode by SSH
+### 1. Connecting to server using VScode by SSH
 * Open SSH config File, and enter the following up:
 
       Host CSc8370
@@ -18,10 +18,10 @@ following me to talk about how to run it in those servers provided by Professor 
 
 * Input password, then try to remote connecting
 
-### We first enter the folder '/gpu1' if we are in the folder '/home'
+### 2. We first enter the folder '/gpu1' if we are in the folder '/home'
     cd gpu1
 
-### Creating a new environment for project model
+### 3. Creating a new environment for project model
 
 * we have to input this command firstly, since the virtual environment is build by nvidia docker.(Any other cases, We dont need this step)
 ```
@@ -45,7 +45,7 @@ for example: conda create -n dong_test python=3.8.19
 conda activate dong_test
 ```
 
-### Install the pytorch according to the 'https://pytorch.org/get-started/locally/'
+### 4. Install the pytorch according to the 'https://pytorch.org/get-started/locally/'
 * checking the CUDA version
 ```
 nvidia-smi
@@ -56,7 +56,7 @@ for example:
 conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
 ```
 
-### Upload the code using git command [We can also choose file transfer(SSH) to upload the code ourselves.]
+### 5. Download the code using git command [We can also choose file transfer(SSH) to upload the code ourselves.]
 
 * Creating a new folder 'dongProject' to save ours code
 ```
