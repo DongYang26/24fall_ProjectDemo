@@ -3,7 +3,7 @@
 ⚡ If you can run "FirstLesson.py" on your PC, then congratulations, you have mastered the knowledge of this lesson.
 
 ⚡ If you have no idea how to Configure the operating environment to run this .py file,
-following me to talk about how to run it in the server.
+following me to talk about how to run it in those servers provided by Professor Wang.
 
 ### connecting to server using VScode by SSH
 * Open SSH config File, and enter the following up:
