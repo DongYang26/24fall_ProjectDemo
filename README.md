@@ -12,7 +12,7 @@ following me to talk about how to run it in those servers provided by Professor 
   
         HostName inspire-gpu.cs.gsu.edu
   
-        Port 2220-2224
+        Port 2220 # We have 5 ports (2220-2224), each port corresponds to a virtual server.
   
         User gpu1
 
