@@ -5,7 +5,7 @@
 ⚡ If you have no idea how to Configure the operating environment to run this .py file,
 following me to talk about how to run it in those servers provided by Professor Wang.
 
-⚡ Before you leave, please show me that you can successfully run the FirstLesson.py file in your environment.
+⚡ Before you leave, please show me that you can successfully run the [FirstLesson.py](https://github.com/DongYang26/CSC8370ProjectDemo/blob/main/FirstLesson.py) file in your environment.
 
 ### 1. Connecting to server using VScode by SSH
 * Open SSH config File in Vscode, and enter the following up:
