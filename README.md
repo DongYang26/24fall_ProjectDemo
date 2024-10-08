@@ -21,7 +21,7 @@ following me to talk about how to run it in the server.
 ### We first enter the folder '/user1' if we are in the folder '/home'
     cd user1
 
-### Configuring the environment for project model
+### Creating a new environment for project model
 
 * we have to input this command firstly, since the virtual environment is build by nvidia docker.(Any other cases, We dont need this step)
 ```
@@ -40,4 +40,16 @@ for example: conda create -n dong_test python=3.8.19
 ```
 conda activate dong_test
 ```
+
+### Upload the code using git command [We can also choose file transfer(SSH) to upload the code ourselves.]
+
+* Creating a new folder 'user1' to save ours code
+```
+mkdir dong
+```
+* Enter the folder 'dong'
+```
+cd dong
+```
+* Download the code using git command
 
