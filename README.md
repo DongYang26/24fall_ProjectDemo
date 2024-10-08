@@ -27,6 +27,10 @@ following me to talk about how to run it in those servers provided by Professor 
 ```
 Source .bashrc
 ```
+or using conda init command
+```
+conda init
+```
 * Using **conda** command to check the environment we have built.
 ```
 conda env list
