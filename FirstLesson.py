@@ -193,3 +193,5 @@ def main():
             num_correct += (test_indexes == test_labels).sum().item()
             num_samples += len(test_labels)
         print("ACC：", num_correct / num_samples)
+if __name__ == '__main__':
+    main()
