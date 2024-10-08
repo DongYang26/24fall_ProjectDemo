@@ -6,9 +6,9 @@
 following me to talk about how to run it in the server.
 
 ## connecting to server using VScode by SSH
-* open SSH config File, and enter the following up:
+* Open SSH config File, and enter the following up:
 
-      Host Csc8370
+      Host CSc8370
   
         HostName inspire-gpu.cs.gsu.edu
   
@@ -16,5 +16,9 @@ following me to talk about how to run it in the server.
   
         User gpu1
 
-* input password, then try to remote connecting
+* Input password, then try to remote connecting
+
+## We first enter the folder '/user1' if we are in the folder '/home'
+    cd user1
+
   
