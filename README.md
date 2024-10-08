@@ -7,10 +7,14 @@ following me to talk about how to run it in the server.
 
 ## connecting to server using VScode by SSH
 * open SSH config File, and enter the following up:
-  Host _Csc8370_
-    HostName _inspire-gpu.cs.gsu.edu_
-    Port _2220_
-    User _gpu1_
+
+      Host Csc8370
+  
+        HostName inspire-gpu.cs.gsu.edu
+  
+        Port 2220-2224
+  
+        User gpu1
 
 * input password, then try to remote connecting
   
