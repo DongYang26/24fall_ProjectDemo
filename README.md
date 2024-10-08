@@ -66,6 +66,10 @@ cd dongProject
 ```
 git clone https://github.com/DongYang26/CSC8370ProjectDemo.git
 ```
+* We have to iteratively enter the code folder until we can see file 'FirstLesson.py' using 'ls'command
+```
+cd CSC8370ProjectDemo
+```
 * Try to run the code.
 ```
 python FirstLesson.py
