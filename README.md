@@ -7,7 +7,7 @@ following me to talk about how to run it in those servers provided by Professor 
 
 ⚡ Before you leave, please show me that you can successfully run the [FirstLesson.py](https://github.com/DongYang26/CSC8370ProjectDemo/blob/main/FirstLesson.py) file in your environment.
 
-⚡ If you would like to use the server in this lesson, please register now in the [form](https://docs.google.com/spreadsheets/d/1WYS-VxcrPQoU8dC_G4ycknN3thgoKp5cSDy71u_1vGw/edit?usp=sharing)
+⚡ If you would like to use the server in this lesson, please register now in the [form](https://docs.google.com/spreadsheets/d/1WYS-VxcrPQoU8dC_G4ycknN3thgoKp5cSDy71u_1vGw/edit?usp=sharing).
 ### 1. Connecting to server using VScode by SSH
 * Open SSH config File in Vscode, and enter the following up:
 
