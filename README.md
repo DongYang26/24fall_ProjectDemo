@@ -23,6 +23,7 @@ following me to talk about how to run it in those servers provided by Professor 
 
 ### 3. Creating a new environment for project model
 
+❗️Assuming you have already installed conda, if not, please refer to this [document](https://github.com/DongYang26/CSC8370ProjectDemo/blob/main/Preparation.md)
 * we have to input this command firstly, since the virtual environment is build by nvidia docker.(Any other cases, We dont need this step)
 ```
 Source .bashrc
