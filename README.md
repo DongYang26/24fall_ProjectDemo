@@ -43,13 +43,24 @@ conda activate dong_test
 
 ### Upload the code using git command [We can also choose file transfer(SSH) to upload the code ourselves.]
 
-* Creating a new folder 'user1' to save ours code
+* Creating a new folder 'dongProject' to save ours code
 ```
-mkdir dong
+mkdir dongProject
 ```
-* Enter the folder 'dong'
+* Enter the folder 'dongProject'
 ```
-cd dong
+cd dongProject
 ```
-* Download the code using git command
+* Download the code into folder dongProject using git command
+```
+git clone https://github.com/DongYang26/CSC8370ProjectDemo.git
+```
+* Try to run the code.
+```
+python FirstLesson.py
+```
+* we need to install it if required package is not in the environment.
+```
+conda install package_name_missed
+```
 
