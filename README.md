@@ -6,7 +6,7 @@
 following me to talk about how to run it in those servers provided by Professor Wang.
 
 ### 1. Connecting to server using VScode by SSH
-* Open SSH config File, and enter the following up:
+* Open SSH config File in Vscode, and enter the following up:
 
       Host CSc8370
   
