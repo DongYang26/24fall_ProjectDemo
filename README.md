@@ -18,8 +18,8 @@ following me to talk about how to run it in the server.
 
 * Input password, then try to remote connecting
 
-### We first enter the folder '/user1' if we are in the folder '/home'
-    cd user1
+### We first enter the folder '/gpu1' if we are in the folder '/home'
+    cd gpu1
 
 ### Creating a new environment for project model
 
