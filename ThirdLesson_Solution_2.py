@@ -160,6 +160,12 @@ def train_main(n_clients=4):
     transform = transforms.Compose(
         [transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
     # transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]) # for cifar10
+
+    # Initialize global model for server
+    global_model = ConvNet().to(device)
+    global_parameters = global_model.state_dict()
+    server = FedAvgServer(global_parameters)
+    
     train_dataset, test_dataset = load_data(transform)
 
     # Partition the dataset for each client
@@ -168,10 +174,7 @@ def train_main(n_clients=4):
                       for dataset in client_datasets]
     test_loader = DataLoader(test_dataset, batch_size=1000, shuffle=False)
 
-    # Initialize global model for server
-    global_model = ConvNet().to(device)
-    global_parameters = global_model.state_dict()
-    server = FedAvgServer(global_parameters)
+
 
     sampler = EqualUserSampler(n_clients, n_clients)
 
