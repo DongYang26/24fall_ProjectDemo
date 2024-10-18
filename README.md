@@ -1,4 +1,4 @@
-# CSC8370ProjectDemo
+# CSC8370ProjectDemo_24fall
 
 ⚡ If you can run "FirstLesson.py" on your PC, then congratulations, you have mastered the knowledge of this lesson.
 
