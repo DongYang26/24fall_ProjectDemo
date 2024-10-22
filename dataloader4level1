@@ -1,0 +1,71 @@
+import torch
+import torchvision
+import torchvision.transforms as transforms
+import numpy as np
+from torch.utils.data import random_split
+from torch.utils.data import DataLoader
+import torch.nn.functional as F
+import torch.nn as nn
+
+
+def dataloader(train_dataset, test_dataset):
+
+    # Set the length of the batch (number of samples per batch)
+    batch_size = 50
+
+    train_loader = DataLoader(
+        dataset=train_dataset,
+        batch_size=batch_size,
+        shuffle=True
+    )
+    # vali_loader = DataLoader(
+    #     dataset= val_dataset,
+    #     batch_size= len(val_dataset),
+    #     shuffle= True
+    # )
+    test_loader = DataLoader(
+        dataset=test_dataset,
+        batch_size=len(test_dataset),
+        shuffle=True
+    )
+    print(f'training has：{len(train_loader)} batch of data！')
+    # print(f'validation has：{len(vali_loader)} batch of data！')
+    print(f'testing has：{len(test_loader)} batch of data！')
+    return train_loader, test_loader
+
+
+def load_data():
+    transform_customer = transforms.Compose([
+        transforms.RandomHorizontalFlip(p=1.0),
+        # transforms.RandomRotation(2),
+        transforms.ToTensor(),
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+
+    transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+
+    # CIFAR10: 60,000 color images of size 32x32
+    # These pictures are divided into 10 classes, each class has 6000 images
+
+    train_dataset = torchvision.datasets.CIFAR10(
+        root="./data/cifar-10-python",
+        train=True, download=True, transform=transform_customer
+    )
+
+    test_dataset = torchvision.datasets.CIFAR10(
+        root="./data/cifar-10-python",
+        train=False, download=True, transform=transform_customer
+    )
+
+    # Divide train_dataset into training set and validation set
+    # train_size = int(0.8 * len(train_dataset))
+    # val_size = len(train_dataset) - train_size
+    # train_dataset, val_dataset = random_split(train_dataset, [train_size, val_size])
+
+    print("The number of training data：", len(train_dataset))
+    # print("The number of Validation data：", len(val_dataset))
+    print("The number of testing data：", len(test_dataset))
+
+    # When we get the all datasets, we design the dataloader for CNN
+    return dataloader(train_dataset, test_dataset)
